@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abwesenheit Register</title>
+    <link rel="stylesheet" href="lernpartner-style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="absence-form">
+            <h2>Register Account</h2>
+            
+            <div class="input-group">
+                <label for="lernpartner">Lernpartner</label>
+                <input type="text" id="lernpartner" name="lernpartner" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="datum">Datum der Abwesenheit</label>
+                <input type="date" id="datum" name="datum" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="grund">Grund der Abwesenheit</label>
+                <input type="text" id="grund" name="grund" required>
+            </div>
+            
+            <button type="submit" class="register-button">Register</button>
+        </form>
+        
+        <p class="info-text">Als LB/ Admin hast du Zugriff auf alle Daten aller Schüler.<br>LP's haben nur Zugriff auf die eigene Daten.</p>
+        
+        <div id="result-section" class="hidden">
+            <h2>Registrierte Abwesenheit</h2>
+            <table id="result-table">
+                <tr>
+                    <th>Lernpartner</th>
+                    <th>Datum der Abwesenheit</th>
+                    <th>Grund der Abwesenheit</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
